@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-templateson.templatesOn",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing", "Productivity", "Developer Tools"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/templateson/n8n-nodes-templateson?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://templateson.com"
+			}
+		]
+	}
+}
