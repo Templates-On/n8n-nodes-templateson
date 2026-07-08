@@ -34,6 +34,9 @@ jobs:
         run: npm run lint
 
       - name: Publish (with provenance)
+        # RELEASE_MODE lets the package's prepublishOnly guard (n8n-node
+        # prerelease) pass — it exits 1 otherwise to block a bare npm publish.
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          RELEASE_MODE: 'true'
